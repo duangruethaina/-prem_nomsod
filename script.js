@@ -45,7 +45,7 @@ const translations = {
         footer_desc: "ความสุขง่ายเกิดขึ้นได้ทุกขณะจิต",
         footer_contact_title: "ติดต่อเรา",
         footer_address: "123 ถนนตัวอย่าง ตำบลในเมือง อำเภอเมือง จังหวัดตัวอย่าง 12345",
-        footer_hours: "เปิดทุกวัน 10:00 - 22:00 น.",
+        footer_hours: "เปิดทุกวัน 16:00 - 22:00 น.",
         footer_social_title: "ติดตามเรา",
         footer_copyright: "ลิขสิทธิ์"
     },
@@ -95,7 +95,7 @@ const translations = {
         footer_desc: "Simple happiness you can feel every day",
         footer_contact_title: "Contact Us",
         footer_address: "123 Sample Rd, Muang, Sample Province 12345",
-        footer_hours: "Open Daily 10:00 - 22:00",
+        footer_hours: "Open Daily 16:00 - 22:00",
         footer_social_title: "Follow Us",
         footer_copyright: "Copyright"
     },
@@ -145,7 +145,7 @@ const translations = {
         footer_desc: "ຄວາມສຸກງ່າຍໆ ທີ່ທ່ານສຳຜັດໄດ້ໃນທຸກໆ ວັນ",
         footer_contact_title: "ຕິດຕໍ່ພວກເຮົາ",
         footer_address: "123 ຖະໜົນຕົວຢ່າງ ຕຳບົນໃນເມືອງ ອຳເພີເມືອງ ຈັງຫວັດຕົວຢ່າງ 12345",
-        footer_hours: "ເປີດທຸກວັນ 10:00 - 22:00 ນ.",
+        footer_hours: "ເປີດທຸກວັນ 16:00 - 22:00 ນ.",
         footer_social_title: "ຕິດຕາມພວກເຮົາ",
         footer_copyright: "ລິຂະສິດ"
     }
