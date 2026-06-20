@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">วัวล้วนล้วน - หอมหวาน ละมุน ในบรรยากาศสุดชิล</title>
+    <meta name="description" content="คาเฟ่และร้านนมสุดชิล วัวล้วนล้วน พบกับเมนูอร่อยหลากหลายในบรรยากาศผ่อนคลาย" id="meta-desc">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- 1. Header -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="./logo.png" alt="วัวล้วนล้วน Logo">
+            </a>
+            <div class="header-actions">
+                <div class="lang-group">
+                    <button class="lang-btn active" data-lang="th">THAI</button>
+                    <button class="lang-btn" data-lang="en">ENGLISH</button>
+                    <button class="lang-btn" data-lang="lo">LAOS</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#promo" data-i18n="nav_promo">โปรโมชั่น</a></li>
+                    <li><a href="#menu" data-i18n="nav_menu">เมนูของเรา</a></li>
+                    <li><a href="#reviews" data-i18n="nav_reviews">รีวิว</a></li>
+                    <li><a href="#footer" data-i18n="nav_location">การเดินทาง</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('./บรรยากาศในร้าน/493940943_2527267730945907_8741123150059989016_n.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-title-wrapper" style="display: flex; align-items: center; gap: 20px; margin-bottom: 10px;">
+                    <img src="./logo.png" alt="วัวล้วนล้วน Logo" class="hero-logo-main" style="margin-bottom: 0; height: 100px;">
+                    <h1 class="hero-title" style="margin-bottom: 0;"><span data-i18n="hero_title_main">วัวล้วนล้วน</span></h1>
+                </div>
+                <h2 class="hero-subtitle" data-i18n="hero_title_sub" style="margin-bottom: var(--spacing-md); color: var(--color-text-main); font-weight: 500;">หอมหวาน ละมุน ในบรรยากาศสุดชิล</h2>
+            <p class="hero-desc" data-i18n="hero_desc">พักผ่อนหย่อนใจไปกับเครื่องดื่มแก้วโปรดและของหวานสุดอร่อย ที่รังสรรค์ด้วยความใส่ใจ</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary" data-i18n="btn_view_menu">ดูเมนูของเรา</a>
+                <a href="#footer" class="btn btn-secondary" data-i18n="btn_map">แผนที่และการเดินทาง</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Promo & Highlights -->
+    <section class="promo section" id="promo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="promo_title">เมนูแนะนำประจำเดือน</h2>
+                <p class="section-subtitle" data-i18n="promo_subtitle">ความอร่อยที่คุณไม่ควรพลาด</p>
+            </div>
+            <div class="promo-content">
+                <div class="promo-image">
+                    <img src="./เมนูร้าน/492412841_2527023350970345_4918805182070823305_n.jpg" alt="เมนูแนะนำ">
+                </div>
+                <div class="promo-text">
+                    <span class="badge" data-i18n="promo_badge">Recommended</span>
+                    <h3 data-i18n="promo_item_title">ชุดเซ็ตความสุข วัวล้วนล้วน</h3>
+                    <p data-i18n="promo_item_desc">เริ่มต้นวันดีๆ ด้วยเครื่องดื่มสูตรพิเศษที่คัดสรรวัตถุดิบชั้นดี ผสมผสานอย่างลงตัว เสิร์ฟพร้อมขนมปังปิ้งเนยนมสุดฟิน หอมนุ่มชุ่มฉ่ำ</p>
+                    <div class="price"><span data-i18n="promo_price_prefix">พิเศษเพียง</span> <span>99.-</span> <span data-i18n="promo_price_suffix">/ เซ็ต</span></div>
+                    <a href="#menu" class="btn btn-primary btn-sm" data-i18n="btn_view_all_menus">ดูเมนูทั้งหมด</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Menu Section -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" data-i18n="menu_title">เมนูของเรา</h2>
+                <p class="section-subtitle" data-i18n="menu_subtitle">เครื่องดื่มและของหวานหลากหลาย ให้คุณเลือกอร่อยได้ไม่ซ้ำ</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="./เมนูร้าน/44318093_775478239458207_3282462492936110080_n.jpg" alt="ปังปิ้งราดช็อกโกแลต">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name" data-i18n="menu_1_name">ปังปิ้งราดช็อกโกแลต</h3>
+                        <p class="menu-desc" data-i18n="menu_1_desc">ขนมปังปิ้งกรอบนอกนุ่มใน ราดช็อกโกแลตเข้มข้นฉ่ำๆ หวานอร่อยลงตัว</p>
+                        <div class="menu-price">35.-</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="./เมนูร้าน/44342331_775477832791581_5534039281854578688_n.jpg" alt="นักเก็ตไก่ทอด">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name" data-i18n="menu_2_name">นักเก็ตไก่ทอด</h3>
+                        <p class="menu-desc" data-i18n="menu_2_desc">นักเก็ตไก่ทอดร้อนๆ กรอบอร่อย ทานเพลิน เคี้ยวสนุกทุกคำ</p>
+                        <div class="menu-price">49.-</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="./เมนูร้าน/492846847_2529634777375869_7035050521733813971_n.jpg" alt="ปังเย็นเครื่องแน่น">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name" data-i18n="menu_3_name">ปังเย็นเครื่องแน่น</h3>
+                        <p class="menu-desc" data-i18n="menu_3_desc">น้ำแข็งไสเกล็ดหิมะเนื้อเนียนนุ่ม ท็อปปิ้งล้นถ้วย หวานเย็นชื่นใจ</p>
+                        <div class="menu-price">59.-</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="./เมนูร้าน/493540617_2527023530970327_8570458719034524791_n.jpg" alt="ปังปิ้งเนยนม">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name" data-i18n="menu_4_name">ปังปิ้งเนยนม</h3>
+                        <p class="menu-desc" data-i18n="menu_4_desc">เมนูสุดคลาสสิก ขนมปังปิ้งหอมเนยแท้ ราดนมข้นหวานละมุน</p>
+                        <div class="menu-price">30.-</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="./เมนูร้าน/492942909_2528367987502548_811911000064678643_n.jpg" alt="เซ็ตของทอดทานเล่น">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name" data-i18n="menu_5_name">เซ็ตของทอดทานเล่น</h3>
+                        <p class="menu-desc" data-i18n="menu_5_desc">รวมมิตรของทอดสุดฮิต ทานคู่กับเครื่องดื่มแก้วโปรดเข้ากันสุดๆ</p>
+                        <div class="menu-price">79.-</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="./เมนูร้าน/493473120_2528534147485932_1438962868243656304_n.jpg" alt="เครื่องดื่มเย็นชื่นใจ">
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name" data-i18n="menu_6_name">เครื่องดื่มเย็นชื่นใจ</h3>
+                        <p class="menu-desc" data-i18n="menu_6_desc">เครื่องดื่มรสชาติกลมกล่อม หอมมัน สดชื่นได้ตลอดทั้งวัน</p>
+                        <div class="menu-price">45.-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Vibe & Atmosphere -->
+    <section class="vibe section" id="vibe">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" data-i18n="vibe_title">บรรยากาศร้าน</h2>
+                <p class="section-subtitle" data-i18n="vibe_subtitle">ผ่อนคลายในพื้นที่ที่ออกแบบมาเพื่อคุณ</p>
+            </div>
+            <div class="masonry-grid">
+                <div class="masonry-item">
+                    <img src="./บรรยากาศในร้าน/461514505_2344750892530926_8616067714999523478_n.jpg" alt="บรรยากาศร้าน">
+                </div>
+                <div class="masonry-item">
+                    <img src="./บรรยากาศในร้าน/492518988_2527277434278270_2006123765050258299_n.jpg" alt="บรรยากาศร้าน">
+                </div>
+                <div class="masonry-item">
+                    <img src="./บรรยากาศในร้าน/492549908_2527277360944944_1235157329857653281_n.jpg" alt="บรรยากาศร้าน">
+                </div>
+                <div class="masonry-item">
+                    <img src="./บรรยากาศในร้าน/494147542_2529628654043148_5498278050551664507_n.jpg" alt="บรรยากาศร้าน">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Testimonials -->
+    <section class="reviews section bg-light" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" data-i18n="reviews_title">เสียงตอบรับจากลูกค้า</h2>
+                <p class="section-subtitle" data-i18n="reviews_subtitle">ความประทับใจจากลูกค้าที่แวะมาเยือนวัวล้วนล้วน</p>
+            </div>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_1_text">"นมสดอร่อยมากก หอมหวานกำลังดี บรรยากาศในร้านก็น่ารัก เหมาะกับการมานั่งชิล ถ่ายรูปสวยทุกมุมเลยค่ะ แนะนำเลย"</p>
+                    <div class="reviewer" data-i18n="review_1_name">- คุณพลอย</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_2_text">"ขนมปังปิ้งเด็ดมาก กรอบนอกนุ่มใน เมนูมีให้เลือกเยอะ ราคาไม่แพง น้องพนักงานบริการดี ยิ้มแย้มแจ่มใส จะแวะมาอีกแน่นอน"</p>
+                    <div class="reviewer" data-i18n="review_2_name">- คุณบอย</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                        <i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_3_text">"ชอบบรรยากาศร้านมาก คลีนๆ สบายตา นั่งทำงานก็เพลิน นั่งเม้าท์กับเพื่อนก็สนุก เมนูโกโก้เข้มข้นถูกใจสายดาร์กครับ"</p>
+                    <div class="reviewer" data-i18n="review_3_name">- คุณนัท</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer class="footer" id="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <a href="#" class="footer-logo">
+                    <img src="./logo.png" alt="วัวล้วนล้วน Logo">
+                </a>
+                <p class="footer-desc" data-i18n="footer_desc">ความสุขง่ายๆ ที่คุณสัมผัสได้ในทุกๆ วัน</p>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer_contact_title">ติดต่อเรา</h3>
+                <ul class="contact-list">
+                    <li><i data-lucide="map-pin"></i> <span data-i18n="footer_address">123 ถนนตัวอย่าง ตำบลในเมือง อำเภอเมือง จังหวัดตัวอย่าง 12345</span></li>
+                    <li><i data-lucide="phone"></i> <span>081-234-5678</span></li>
+                    <li><i data-lucide="clock"></i> <span data-i18n="footer_hours">เปิดทุกวัน 10:00 - 22:00 น.</span></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 data-i18n="footer_social_title">ติดตามเรา</h3>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/premnomsod" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="Line"><i data-lucide="message-circle"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><span data-i18n="footer_copyright">ลิขสิทธิ์</span> &copy; 2024 วัวล้วนล้วน. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=4"></script>
+</body>
+</html>
